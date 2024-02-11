@@ -13,8 +13,8 @@ defmodule Pipe do
   end
 end
 
-IO.puts(Pipe.calc()) # which returns 4.44445
-IO.puts("That means: (((45 / 2) ^-1) *100)")
-IO.puts(Pipe.rounder(Pipe.calc())) # which returns 4
-
-Pipe.calc()
+# which returns 4.44445
+IO.puts("The calc() function will return: #{Pipe.calc()}")
+IO.puts("Which means: (((45 / 2) ^-1) *100)")
+# which returns 4
+IO.puts("The rounder() function will round it to: #{Pipe.rounder(Pipe.calc())}")

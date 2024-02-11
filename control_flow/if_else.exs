@@ -17,3 +17,7 @@ end
 
 Statements.if_else(24)
 Statements.unless_statement(24)
+
+# There is no ternary in Elixir, but you can do an one-liner if statement:
+num = 666
+IO.puts(if num > 100, do: "Result: 100", else: "Result: #{num}")
